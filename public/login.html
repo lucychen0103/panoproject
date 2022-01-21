@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		 <link rel="stylesheet" type="text/css" href="css/login.css">
+
+	</head>
+	<body>
+ <script src="/js/login.js"></script>
+		<div id = "menu-buttons">		
+<ul>
+  <li><a href="./">Home</a></li>
+  <li style="float:right"><a href="login.html">Sign In</a></li>
+  <li style="float:right"><a href="signup.html">Sign Up</a></li>
+</ul>
+</div>
+		<div class="login-form">
+			<h1>Login</h1>
+<!-- 			<form action="auth" method="POST">
+				<input type="text" name="username" placeholder="Username" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<input type="submit">
+			</form> -->
+
+<form action="/login" method="post">
+    <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+    </div>
+    <div>
+        <label for="current-password">Password</label>
+        <input id="current-password" name="password" type="password" autocomplete="current-password" required />
+    </div>
+    <div>
+        <a href="profile.html"><button type="submit">Sign in</button></a>
+    </div>
+</form>
+		</div>
+	</body>
+</html>
